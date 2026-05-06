@@ -795,6 +795,359 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Research
+--------------------------------------------------------------*/
+.research .research-item {
+  width: 100%;
+  padding: 32px 24px;
+  background: #fff;
+  border: 1px solid #eef0f2;
+  border-radius: 8px;
+  box-shadow: 0px 5px 40px 0px rgba(110, 123, 131, 0.06);
+  transition: all ease-in-out 0.3s;
+}
+
+.research .research-item:hover {
+  border-color: #d8e8f8;
+  box-shadow: 0px 8px 45px 0px rgba(110, 123, 131, 0.12);
+  transform: translateY(-4px);
+}
+
+.research .research-item i {
+  color: #0563bb;
+  font-size: 42px;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.research .research-item h4 {
+  color: #45505b;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.research .research-item p {
+  color: #5f6f7b;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.research-paper-title {
+  color: #45505b;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.journal-card {
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid #eef0f2;
+  border-radius: 8px;
+  box-shadow: 0px 5px 40px 0px rgba(110, 123, 131, 0.06);
+  display: flex;
+  gap: 22px;
+  padding: 28px;
+  transition: all ease-in-out 0.3s;
+  width: 100%;
+}
+
+.journal-card:hover {
+  border-color: #d8e8f8;
+  box-shadow: 0px 8px 45px 0px rgba(110, 123, 131, 0.12);
+  transform: translateY(-4px);
+}
+
+.journal-card-icon {
+  align-items: center;
+  background: #f8fbff;
+  border-radius: 8px;
+  display: flex;
+  flex: 0 0 64px;
+  height: 64px;
+  justify-content: center;
+  width: 64px;
+}
+
+.journal-card-icon i {
+  color: #0563bb;
+  font-size: 34px;
+}
+
+.journal-card-content h3 {
+  color: #45505b;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+.journal-card-content p {
+  color: #5f6f7b;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 18px;
+}
+
+.research-article,
+.research-attachments,
+.research-pdf-preview,
+.research-ppt-preview {
+  background: #fff;
+  border: 1px solid #eef0f2;
+  border-radius: 8px;
+  box-shadow: 0px 5px 40px 0px rgba(110, 123, 131, 0.06);
+  margin: 0 auto;
+  max-width: 980px;
+  padding: 36px;
+}
+
+.research-article-header {
+  border-bottom: 1px solid #eef0f2;
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+}
+
+.research-category {
+  color: #0563bb;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.research-article h1 {
+  color: #45505b;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 16px;
+}
+
+.research-subtitle {
+  color: #5f6f7b;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.research-article h3,
+.research-attachments h3,
+.research-pdf-preview h3,
+.research-ppt-preview h3 {
+  color: #45505b;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 30px 0 14px;
+}
+
+.research-attachments h3,
+.research-pdf-preview h3,
+.research-ppt-preview h3 {
+  margin-top: 0;
+}
+
+.research-article h4 {
+  color: #45505b;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 22px 0 10px;
+}
+
+.research-article p {
+  color: #45505b;
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+.research-list {
+  color: #45505b;
+  font-size: 15px;
+  line-height: 28px;
+  margin: 0 0 22px;
+  padding-left: 22px;
+}
+
+.research-list li {
+  margin-bottom: 10px;
+}
+
+.research-article blockquote {
+  background: #f8fbff;
+  border-left: 4px solid #0563bb;
+  color: #45505b;
+  font-size: 17px;
+  font-style: italic;
+  line-height: 30px;
+  margin: 26px 0;
+  padding: 22px 26px;
+}
+
+.research-article hr {
+  border-color: #eef0f2;
+  margin: 34px 0;
+}
+
+.research-attachments,
+.research-pdf-preview,
+.research-ppt-preview {
+  margin-top: 30px;
+}
+
+.research-pdf-frame,
+.research-ppt-frame {
+  background: #f8fbff;
+  border: 1px solid #eef0f2;
+  border-radius: 8px;
+  display: block;
+  height: 720px;
+  width: 100%;
+}
+
+.presentation-carousel {
+  background: #f8fbff;
+  border: 1px solid #eef0f2;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.presentation-carousel .carousel-inner {
+  aspect-ratio: 16 / 9;
+  background: #f8fbff;
+}
+
+.presentation-carousel .carousel-item,
+.presentation-carousel .carousel-item img {
+  height: 100%;
+}
+
+.presentation-carousel .carousel-item img {
+  object-fit: contain;
+}
+
+.presentation-carousel .carousel-control-prev,
+.presentation-carousel .carousel-control-next {
+  background: rgba(5, 99, 187, 0.78);
+  bottom: auto;
+  height: 52px;
+  opacity: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+}
+
+.presentation-carousel .carousel-control-prev {
+  border-radius: 0 8px 8px 0;
+}
+
+.presentation-carousel .carousel-control-next {
+  border-radius: 8px 0 0 8px;
+}
+
+.presentation-carousel .carousel-indicators {
+  background: rgba(69, 80, 91, 0.45);
+  border-radius: 999px;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 6px 8px;
+  width: fit-content;
+}
+
+.presentation-carousel .carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+}
+
+.preview-note {
+  color: #5f6f7b;
+  font-size: 13px;
+  line-height: 22px;
+  margin: 12px 0 0;
+}
+
+.attachment-item {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #eef0f2;
+  border-radius: 8px;
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  transition: all ease-in-out 0.3s;
+  width: 100%;
+}
+
+.attachment-item:hover {
+  border-color: #0563bb;
+  box-shadow: 0px 8px 35px rgba(110, 123, 131, 0.12);
+  transform: translateY(-3px);
+}
+
+.attachment-item i {
+  color: #0563bb;
+  font-size: 38px;
+}
+
+.attachment-item strong {
+  color: #45505b;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.attachment-item small {
+  color: #5f6f7b;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .journal-card {
+    display: block;
+  }
+
+  .journal-card-icon {
+    margin-bottom: 18px;
+  }
+
+  .research-paper-title {
+    font-size: 20px;
+  }
+
+  .research-article,
+  .research-attachments,
+  .research-pdf-preview,
+  .research-ppt-preview {
+    padding: 24px;
+  }
+
+  .research-pdf-frame,
+  .research-ppt-frame {
+    height: 520px;
+  }
+
+  .research-article h1 {
+    font-size: 26px;
+  }
+
+  .research-article p {
+    text-align: left;
+  }
+}
+
+/*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {

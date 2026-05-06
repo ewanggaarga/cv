@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>AIoT-based Drowsiness Level Detection - Ewangga Arga Wikersa</title>
+  <link href="../../assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="../../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../../assets/css/style.css?v=research-20260506" rel="stylesheet">
+</head>
+
+<body>
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <header id="header" class="d-flex flex-column justify-content-center">
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="../../index.html#hero" class="nav-link scrollto"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="../../index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="../../index.html#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+        <li><a href="../../index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+        <li><a href="../../index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+        <li><a href="../../index.html#research" class="nav-link scrollto active"><i class="bx bx-search-alt"></i> <span>Research</span></a></li>
+        <li><a href="../../index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="research section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Jurnal Penelitian</h2>
+          <p class="research-paper-title">AIoT-based drowsiness level detection system using a hybrid F-LSNN network</p>
+        </div>
+
+        <article class="research-article">
+          <div class="research-article-header">
+            <span class="research-category">Artificial Intelligence of Things</span>
+            <h1>Mendeteksi Kantuk Sebelum Terlambat: Inovasi AIoT dan Jaringan Hybrid F-LSNN</h1>
+            <p class="research-subtitle">Ringkasan penelitian tentang sistem pendeteksi tingkat kantuk berbasis AIoT, spektrum kantuk 5 tingkat, dan jaringan Hybrid F-LSNN.</p>
+          </div>
+
+          <p>Mengemudi dalam keadaan mengantuk adalah ancaman tersembunyi (<em>the silent threat</em>) yang sering kali tidak disadari oleh pengemudi. Penurunan kognitif dapat terjadi secara perlahan hingga akhirnya tabrakan menjadi momen yang menyadarkan mereka.</p>
+
+          <p>Dampaknya sangat masif: diperkirakan terjadi 100.000 kecelakaan setiap tahunnya, yang mengakibatkan 71.000 cedera dan 1.550 korban jiwa. Secara ekonomi, masalah ini membebani masyarakat dengan biaya hingga $109 miliar per tahun.</p>
+
+          <h3>1. Masalah yang Dihadapi</h3>
+          <p>Kelemahan utama dari sistem pendeteksi kantuk standar saat ini adalah penggunaan klasifikasi biner, yakni sekadar menilai apakah pengemudi "Sadar" atau "Tertidur". Secara biologis, kelelahan adalah degradasi yang terjadi secara bertahap.</p>
+
+          <p>Menunggu hingga pengemudi benar-benar tertidur untuk membunyikan peringatan akan membuat waktu reaksi menjadi nol. Pada kecepatan jalan raya, alarm yang berbunyi tepat saat tidur dimulai membuat tabrakan secara matematis tidak dapat dihindari. Oleh karena itu, deteksi dini di dalam "jendela intervensi" (<em>intervention window</em>) sangat krusial untuk tindakan keselamatan preventif.</p>
+
+          <h3>2. Solusi yang Ditawarkan dan Pengembangan yang Lebih Efektif</h3>
+          <p>Berdasarkan jurnal, penulis menawarkan sistem pendeteksi tingkat kantuk berbasis AIoT (<em>Artificial Intelligence of Things</em>) yang tidak hanya mendeteksi kondisi sadar atau tertidur, tetapi membaca perubahan kantuk secara bertahap. Sistem ini menggabungkan kamera, deteksi wajah YOLOv10, filter emosi, jaringan Hybrid F-LSNN, serta perangkat keras Jetson Nano dan Arduino Uno.</p>
+
+          <h4>Spektrum Kantuk 5 Tingkat</h4>
+          <p>Untuk mengatasi kelemahan tersebut, sistem mendefinisikan kantuk dalam lima tingkatan spektrum:</p>
+
+          <ul class="research-list">
+            <li><strong>Tingkat 1 (Sadar/Waspada):</strong> Pergerakan wajah aktif dan pandangan mata bergerak cepat.</li>
+            <li><strong>Tingkat 2 (Sedikit Mengantuk):</strong> Pandangan mulai melambat dan posisi bibir sedikit terbuka.</li>
+            <li><strong>Tingkat 3 (Cukup Mengantuk):</strong> Kedipan mata menjadi lambat dan lebih sering, disertai pergerakan mulut.</li>
+            <li><strong>Tingkat 4 (Sangat Mengantuk):</strong> Pengemudi sering menguap dan kedipan mata terasa berat secara sadar.</li>
+            <li><strong>Tingkat 5 (Tertidur Pulas):</strong> Kelopak mata tertutup sepenuhnya dan kepala menunduk ke depan.</li>
+          </ul>
+
+          <p>Arsitektur F-LSNN (<em>Fuzzy-Long Short-Term Memory Neural Network</em>) dirancang agar dapat memetakan biologi manusia langsung ke dalam algoritma.</p>
+
+          <p><strong>Logika Fuzzy</strong> menangani ambiguitas perilaku dengan menerjemahkan input biologis yang tumpang tindih menjadi gradien probabilitas menggunakan fungsi Gaussian. Sementara itu, <strong>LSTM</strong> (<em>Long Short-Term Memory</em>) bertugas merekam dan melacak data perilaku berurutan (<em>time-series</em>) demi mengidentifikasi kemunduran kesadaran secara progresif.</p>
+
+          <h4>Filter Emosi sebagai Penjaga Gerbang</h4>
+          <p>Sistem menangkap video dari kamera dan menggunakan algoritma YOLOv10 untuk deteksi wajah serta emosi. Pengemudi yang sadar sering kali memperlihatkan emosi spesifik seperti marah atau terkejut. Sistem akan secara otomatis mengabaikan (<em>bypass</em>) emosi-emosi ini karena tidak mengindikasikan kantuk.</p>
+
+          <p>Namun, jika terdeteksi emosi "Netral" atau "Sedih", sistem akan memicu pemrosesan lanjutan oleh F-LSNN. Pra-penyaringan ini secara efektif memangkas beban komputasi dan menurunkan latensi secara dramatis dari 74,47 detik menjadi hanya 68,22 detik.</p>
+
+          <h4>Arsitektur AIoT dan Putaran Perangkat Keras yang Self-Healing</h4>
+          <p>Keselamatan otomotif menuntut perangkat keras yang tidak boleh macet (<em>freeze</em>). Berikut adalah kerangka kerja (<em>blueprint</em>) di balik sistem ini:</p>
+
+          <ul class="research-list">
+            <li><strong>Pengambilan Visual:</strong> Kamera Logitech C270 secara terus-menerus menangkap perilaku dengan resolusi 720p pada kecepatan 30 FPS.</li>
+            <li><strong>Otak Komputasi:</strong> Jetson Nano dengan penyimpanan eMMC 16GB menjadi wadah operasional YOLOv10 dan F-LSNN.</li>
+            <li><strong>Peringatan &amp; Integrasi:</strong> Buzzer digunakan sebagai alarm lokal berdesibel tinggi, sementara sistem terhubung ke cloud platform untuk pemantauan armada.</li>
+            <li><strong>Mekanisme Self-Healing:</strong> Arduino Uno bertindak sebagai pemantau kesehatan sekaligus "alat pacu jantung" sistem.</li>
+          </ul>
+
+          <p>Arduino akan meminta status sistem setiap 5 detik. Jika Jetson Nano mengalami <em>freeze</em> dan tidak merespons, Arduino akan membunyikan bunyi "Bip" cadangan lalu memaksa reboot fisik, memastikan pemantauan tidak pernah terputus saat mengemudi.</p>
+
+          <h4>Solusi Pengembangan yang Lebih Efektif</h4>
+          <p>Agar solusi ini lebih efektif untuk penerapan nyata, sistem dapat dikembangkan menjadi pendekatan <em>multi-sensor adaptive intervention</em>. Artinya, keputusan tidak hanya bergantung pada wajah, tetapi juga menggabungkan beberapa sinyal lain seperti pola kemudi, perubahan posisi kepala, durasi menatap jalan, getaran kendaraan, dan respons pengemudi terhadap peringatan.</p>
+
+          <p>Pendekatan ini lebih kuat karena wajah pengemudi bisa tertutup masker, silau kacamata, atau cahaya kabin yang buruk. Dengan menggabungkan data visual dan perilaku kendaraan, sistem tidak mudah salah membaca kondisi pengemudi. Misalnya, jika wajah menunjukkan kantuk tingkat 3, pola kemudi mulai tidak stabil, dan respons terhadap alarm lambat, sistem dapat menaikkan level risiko secara otomatis.</p>
+
+          <p>Selain alarm suara, intervensi juga sebaiknya dibuat bertahap. Pada risiko sedang, sistem memberi peringatan audio dan visual. Pada risiko tinggi, sistem dapat mengaktifkan getaran kursi atau setir. Pada risiko sangat tinggi, sistem dapat mengirim peringatan ke dashboard armada, menyarankan titik istirahat terdekat, atau terintegrasi dengan fitur bantuan kendaraan seperti pembatas kecepatan dan lane keeping assist jika tersedia.</p>
+
+          <p>Dengan demikian, solusi yang lebih efektif bukan hanya "mendeteksi kantuk", tetapi membangun mekanisme pencegahan berlapis: mendeteksi lebih awal, memvalidasi dengan banyak sinyal, memberi peringatan sesuai tingkat risiko, dan memastikan sistem tetap berjalan melalui mekanisme pemulihan mandiri.</p>
+
+          <h3>3. Ukuran Keberhasilan</h3>
+          <p>Keberhasilan sistem diukur melalui akurasi klasifikasi tingkat kantuk, waktu inferensi, pengurangan latensi, ketahanan terhadap kondisi visual yang sulit, kemampuan pemulihan perangkat keras, serta efektivitas intervensi dalam membuat pengemudi merespons sebelum risiko kecelakaan meningkat.</p>
+
+          <p>Model ini berada di zona penerapan ideal (<em>Optimal Edge Deployment Zone</em>), dengan mencapai akurasi puncak sebesar 98,63% pada waktu inferensi 21 detik. Hasil ini menghadirkan keseimbangan terbaik antara pemrosesan tingkat rumit dan intervensi waktu nyata di jalan.</p>
+
+          <p>Pra-penyaringan emosi juga menjadi indikator keberhasilan karena mampu memangkas latensi dari 74,47 detik menjadi 68,22 detik. Artinya, sistem dapat lebih cepat memutuskan kapan pemrosesan F-LSNN perlu dijalankan.</p>
+
+          <p>Model F-LSNN dirancang untuk bertahan dalam lingkungan jalanan yang penuh variabel hambatan (<em>visual noise</em>), jauh melampaui kondisi laboratorium. Algoritma ini tetap mempertahankan kejernihan tinggi saat mendeteksi kantuk di malam hari, dengan akurasi deteksi 93,7% pada tingkat 5.</p>
+
+          <p>Menariknya, sistem ini juga sanggup melacak kelelahan di area mata dengan akurasi 95,5% walau pengemudi mengenakan lensa kacamata yang memantulkan cahaya, maupun ketika separuh wajah tertutup oleh masker medis. Keberhasilan sistem ini secara keseluruhan menutupi kelemahan model konvensional yang harus berkompromi antara kemampuan menangani wajah buram dengan analisis memori waktu perilaku.</p>
+
+          <p>Untuk solusi pengembangan, ukuran keberhasilan tambahan dapat dilihat dari penurunan <em>false alarm</em>, peningkatan kecepatan respons pengemudi terhadap peringatan, stabilitas deteksi pada kondisi malam atau silau, serta kemampuan sistem menjaga pemantauan tetap aktif selama perjalanan panjang.</p>
+        </article>
+
+        <div class="research-ppt-preview" data-aos="fade-up">
+          <h3>Preview Presentasi</h3>
+          <div id="presentationCarousel" class="carousel slide presentation-carousel" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#presentationCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#presentationCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#presentationCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#presentationCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#presentationCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#presentationCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#presentationCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#presentationCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#presentationCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+              <button type="button" data-bs-target="#presentationCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="lampiran/presentasi-slides/Slide1.PNG" class="d-block w-100" alt="Slide presentasi 1">
+              </div>
+              <div class="carousel-item">
+                <img src="lampiran/presentasi-slides/Slide2.PNG" class="d-block w-100" alt="Slide presentasi 2">
+              </div>
+              <div class="carousel-item">
+                <img src="lampiran/presentasi-slides/Slide3.PNG" class="d-block w-100" alt="Slide presentasi 3">
+              </div>
+              <div class="carousel-item">
+                <img src="lampiran/presentasi-slides/Slide4.PNG" class="d-block w-100" alt="Slide presentasi 4">
+              </div>
+              <div class="carousel-item">
+                <img src="lampiran/presentasi-slides/Slide5.PNG" class="d-block w-100" alt="Slide presentasi 5">
+              </div>
+              <div class="carousel-item">
+                <img src="lampiran/presentasi-slides/Slide6.PNG" class="d-block w-100" alt="Slide presentasi 6">
+              </div>
+              <div class="carousel-item">
+                <img src="lampiran/presentasi-slides/Slide7.PNG" class="d-block w-100" alt="Slide presentasi 7">
+              </div>
+              <div class="carousel-item">
+                <img src="lampiran/presentasi-slides/Slide8.PNG" class="d-block w-100" alt="Slide presentasi 8">
+              </div>
+              <div class="carousel-item">
+                <img src="lampiran/presentasi-slides/Slide9.PNG" class="d-block w-100" alt="Slide presentasi 9">
+              </div>
+              <div class="carousel-item">
+                <img src="lampiran/presentasi-slides/Slide10.PNG" class="d-block w-100" alt="Slide presentasi 10">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#presentationCarousel" data-bs-slide="prev" aria-label="Previous slide">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#presentationCarousel" data-bs-slide="next" aria-label="Next slide">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+          </div>
+          <p class="preview-note">Preview presentasi ditampilkan sebagai slide gambar agar dapat digeser horizontal per halaman di localhost. File PPTX asli tetap tersedia pada bagian lampiran.</p>
+        </div>
+
+        <div class="research-pdf-preview" data-aos="fade-up">
+          <h3>Preview Jurnal</h3>
+          <iframe class="research-pdf-frame" src="lampiran/AIoT-based-drowsiness-level-detection-system-using-_2026_Egyptian-Informatic.pdf"></iframe>
+        </div>
+
+        <div class="research-attachments" data-aos="fade-up">
+          <h3>Lampiran</h3>
+          <div class="row">
+            <div class="col-lg-6 d-flex align-items-stretch mt-4">
+              <a class="attachment-item" href="lampiran/AIoT-based-drowsiness-level-detection-system-using-_2026_Egyptian-Informatic.pdf" target="_blank">
+                <i class="bx bxs-file-pdf"></i>
+                <span>
+                  <strong>File Jurnal</strong>
+                  <small>PDF penelitian</small>
+                </span>
+              </a>
+            </div>
+            <div class="col-lg-6 d-flex align-items-stretch mt-4">
+              <a class="attachment-item" href="lampiran/Sistem-Deteksi-Tingkat-Kantuk-AIoT-menggunakan-Jaringan-Hybrid-F-LSNN.pptx" target="_blank">
+                <i class="bx bxs-slideshow"></i>
+                <span>
+                  <strong>File Presentasi</strong>
+                  <small>PPT/PPTX penelitian</small>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="index.html" class="btn btn-outline-primary">Back to Journal List</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <h3>Ewangga Arga Wikersa</h3>
+      <p>Software Engineering</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/ewanggaarga/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ewangga-arga-wikersa/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">&copy; Copyright <strong><span>Ewangga Arga Wikersa</span></strong>. All Rights Reserved</div>
+      <div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div>
+    </div>
+  </footer>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="../../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../../assets/vendor/aos/aos.js"></script>
+  <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../../assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="../../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../../assets/vendor/php-email-form/validate.js"></script>
+  <script src="../../assets/js/main.js"></script>
+</body>
+
+</html>
