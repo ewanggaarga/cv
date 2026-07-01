@@ -1113,6 +1113,250 @@ section {
   font-size: 13px;
 }
 
+/* ---- Video Embed Section ---- */
+.research-video-embed {
+  background: #fff;
+  border: 1px solid #eef0f2;
+  border-radius: 8px;
+  box-shadow: 0px 5px 40px 0px rgba(110, 123, 131, 0.06);
+  margin: 0 auto 30px;
+  max-width: 980px;
+  padding: 36px;
+}
+
+.research-video-embed h3 {
+  color: #45505b;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 18px;
+}
+
+.video-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.video-wrapper iframe {
+  aspect-ratio: 16 / 9;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.video-credit {
+  color: #5f6f7b;
+  font-size: 13px;
+  line-height: 22px;
+  margin: 12px 0 0;
+}
+
+.video-credit a {
+  color: #0563bb;
+}
+
+/* ---- GitHub Highlight Section ---- */
+.research-github-highlight {
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  margin: 0 auto 30px;
+  max-width: 980px;
+  padding: 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+.research-github-highlight::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(5, 99, 187, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.github-highlight-badge {
+  background: #238636;
+  border-radius: 999px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+  padding: 6px 16px;
+  text-transform: uppercase;
+}
+
+.github-highlight-badge i {
+  font-size: 14px;
+  margin-right: 4px;
+  vertical-align: -1px;
+}
+
+.research-github-highlight h3 {
+  color: #e6edf3;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 14px;
+}
+
+.research-github-highlight p {
+  color: #8b949e;
+  font-size: 15px;
+  line-height: 26px;
+  margin-bottom: 24px;
+}
+
+.github-highlight-features {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 28px;
+}
+
+.github-feature-item {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid #21262d;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.github-feature-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #30363d;
+}
+
+.github-feature-item i {
+  color: #58a6ff;
+  display: block;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.github-feature-item strong {
+  color: #e6edf3;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.github-feature-item span {
+  color: #8b949e;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.btn-github-primary {
+  align-items: center;
+  background: #238636;
+  border: 1px solid rgba(240, 246, 252, 0.1);
+  border-radius: 8px;
+  color: #fff;
+  display: inline-flex;
+  font-size: 15px;
+  font-weight: 600;
+  gap: 8px;
+  justify-content: center;
+  padding: 14px 28px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+  width: 100%;
+}
+
+.btn-github-primary:hover {
+  background: #2ea043;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.btn-github-primary i {
+  font-size: 22px;
+}
+
+/* ---- GitHub Code Block ---- */
+.github-code-block {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  color: #c9d1d9;
+  font-family: "Cascadia Code", "Fira Code", Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0 0 22px;
+  padding: 18px 22px;
+  overflow-x: auto;
+}
+
+.github-code-block code {
+  background: none;
+  color: inherit;
+  padding: 0;
+}
+
+/* ---- Featured Attachment ---- */
+.attachment-item-featured {
+  border-color: #238636;
+  background: linear-gradient(135deg, #f6fef9 0%, #fff 100%);
+}
+
+.attachment-item-featured:hover {
+  border-color: #2ea043;
+  box-shadow: 0px 8px 35px rgba(35, 134, 54, 0.15);
+}
+
+.attachment-item-featured i {
+  color: #238636;
+}
+
+/* ---- Research Table ---- */
+.research-table {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 0 22px;
+}
+
+.research-table thead th {
+  font-size: 14px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.research-table tbody td {
+  color: #45505b;
+  vertical-align: middle;
+}
+
+.research-table small {
+  color: #5f6f7b;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 2px;
+}
+
+/* ---- Heading Subtitles ---- */
+.research-article h3 small,
+.research-article h4 small {
+  color: #5f6f7b;
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
 @media (max-width: 768px) {
   .journal-card {
     display: block;
@@ -1144,6 +1388,14 @@ section {
 
   .research-article p {
     text-align: left;
+  }
+
+  .github-highlight-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .research-github-highlight {
+    padding: 24px;
   }
 }
 
